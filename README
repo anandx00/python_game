@@ -1,3 +1,104 @@
+# 🐦 Anand Angry Birds
+
+A fast-paced Pygame shooter where you control a hero launching fireballs to take down descending enemies. Avoid being hit, rack up combos, and strive for a high score!
+
+---
+
+## 🎮 Gameplay
+
+- Move the hero left & right using **A** and **D** keys.
+- Press **SPACE** to shoot fireballs at falling enemies.
+- Every enemy hit increases your score by **1**.
+- On reaching multiples of **10**, the game gets tougher — more enemies spawn and speed ramps up.
+- You start with **3 lives**. Colliding with enemies or letting them hit the ground costs you a life.
+- Once lives run out, it's **game over**, with your final score displayed.
+- Click the **reload icon** to restart the game.
+
+---
+
+## 📦 Requirements
+
+- Python 3.7+
+- [Pygame](https://pypi.org/project/pygame/) (install via `pip install pygame`)
+
+---
+
+## 🛠️ Installation & Running
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/yourusername/anand-angry-birds.git
+   cd anand-angry-birds
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install pygame
+Place media files into the REQUIREMENTS/ folder:
+
+arduino
+Copy
+Edit
+REQUIREMENTS/
+├── fireball.webp
+├── hero.png
+├── latest.webp       # enemy sprite
+├── BACKGROUNDS.webp
+├── radio (1).png
+├── lastscreen.webp
+├── endblack.webp
+├── logo.png
+├── font_file.ttf
+└── angry-bird-theme-song.mp3
+Run the game:
+
+bash
+Copy
+Edit
+python main.py
+🧩 Code Structure
+main.py
+Initializes the game, hero, enemies, fireballs, and runs the main loop.
+
+Fireball class
+Handles bullet creation, movement, and rendering.
+
+Screen class
+Manages the game state: setup, event loop, hero/enemy logic, collision detection, scoring, life tracking, and game over UI.
+
+🔄 How the Game Works
+Movement & Shooting: Move hero with A/D, shoot with SPACE. Only one fireball shot per space press.
+
+Enemy Logic: Enemies fall from the top, respawn at random positions after being destroyed or hitting the bottom.
+
+Level Scaling: For each 10 points scored, the difficulty rises—new enemies and faster falling speed.
+
+Life & Game Over: Collisions with enemies or letting them fall off screen deducts a life. After 0 lives, the game ends.
+
+🚀 Potential Enhancements
+Power-ups: Add health restores, rapid-fire modes, or shields.
+
+Multiple enemy types: With different speeds or behaviors.
+
+Animated sprites: Enhance visuals for characters and backgrounds.
+
+Sound effects: Add feedback for firing, hits, and game over.
+
+High-score Tracking: Store and display best scores.
+
+📝 Development Tips
+Use sprites/groups: Pygame’s pygame.sprite.Sprite and Group can clean up your collision and rendering logic — supported in tutorials like Real Python’s “Primer” 
+Reddit
++1
+Glyph
++1
+GitHub
+GitHub
+.
+
+Modular structure: As your game grows, split code into modules (e.g., hero.py, enemy.py, fireball.py) for clarity — inspired by Pygame best practices .
+
 📣 Contributing
 Contributions welcome! To get started:
 
