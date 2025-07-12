@@ -1,0 +1,42 @@
+📣 Contributing
+Contributions welcome! To get started:
+
+Fork the project.
+
+Create a new branch: feat/my-feature.
+
+Commit your changes with descriptive messages.
+
+Open a Pull Request to discuss and review.
+
+📝 License
+This project is open-source under the MIT License. Feel free to use and improve!
+
+🎉 Acknowledgments
+Pygame community and documentation
+
+Real Python Pygame tutorials
+
+Inspiration from various Angry-Birds-style clones on GitHub, e.g., marblexu/PythonAngryBirds 
+GitHub
++1
+GitHub
++1
+
+Enjoy playing—and let’s see how high you can score! 🚀
+
+yaml
+Copy
+Edit
+
+---
+
+### 🧭 Tips
+
+- Add GIFs or screenshots in the “Gameplay” section to illustrate the experience.
+- Make sure your image/sound file names match exactly the filenames used in the code.
+- Consider splitting the monolithic `Screen` class into smaller modules for maintainability.
+- Encourage users to show off their high scores or mods in Issues or Discussions.
+
+Let me know if you'd like help integrating any of these features or organizing the repo files!
+::contentReference[oaicite:30]{index=30}
